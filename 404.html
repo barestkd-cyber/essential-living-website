@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Page not found | Essential Living Chiropractic</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       background:#f6f3ec;color:#2b2622;display:flex;min-height:100vh;align-items:center;
+       justify-content:center;text-align:center;margin:0;padding:1.5rem}
+  h1{font-family:Georgia,serif;color:#234a34}
+  a.btn{display:inline-block;margin-top:1rem;padding:.7rem 1.4rem;border-radius:999px;
+        background:#234a34;color:#fff;text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<div>
+  <h1>That page went out of alignment</h1>
+  <p>The page you’re looking for isn’t here. Let’s get you back on track.</p>
+  <a class="btn" id="home-link" href="/">Back to the homepage</a>
+</div>
+<script>
+  /* Works on both the GitHub Pages preview subpath and the final domain */
+  var seg = location.pathname.split("/")[1];
+  if (seg === "essential-living-website") {
+    document.getElementById("home-link").href = "/essential-living-website/";
+  }
+</script>
+</body>
+</html>

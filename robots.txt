@@ -1,0 +1,7 @@
+# PREVIEW MODE: blocking all crawling until DNS cutover.
+# AT LAUNCH: change Disallow to Allow, and remove the noindex
+# meta tag from every page (grep for REMOVE AT LAUNCH).
+User-agent: *
+Disallow: /
+
+Sitemap: https://essentiallivingchiro.com/sitemap.xml
