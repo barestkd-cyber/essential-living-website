@@ -60,10 +60,10 @@ a:hover { color: var(--moss); }
 }
 .header-inner {
   display: flex; align-items: center; gap: 1rem;
-  padding: .7rem 1.25rem; max-width: var(--wrap); margin: 0 auto;
+  padding: 1.1rem 1.5rem; max-width: var(--wrap); margin: 0 auto;
 }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
-.brand-logo { height: 54px; width: auto; }
+.brand-logo { height: 84px; width: auto; }
 .brand-name { font-family: var(--serif); font-size: 1.15rem; color: var(--forest); line-height: 1.1; }
 .brand-name small {
   display: block; font-family: var(--sans); font-size: .62rem;
@@ -127,6 +127,7 @@ a:hover { color: var(--moss); }
   color: var(--moss); font-weight: 700; margin-bottom: .6rem;
 }
 .eyebrow svg { width: 14px; height: 14px; }
+.eyebrow img { height: 20px; width: auto; }
 
 /* ---------- Cards ---------- */
 .cards { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
@@ -232,6 +233,8 @@ form button { margin-top: 1.25rem; cursor: pointer; }
 }
 @media (max-width: 768px) {
   .nav-toggle { display: block; }
+  .header-inner { padding: .7rem 1.15rem; }
+  .brand-logo { height: 56px; }
   .site-nav {
     display: none; position: absolute; top: 100%; left: 0; right: 0;
     background: var(--white); border-bottom: 1px solid var(--sand);
