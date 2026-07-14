@@ -63,7 +63,8 @@
         "closes": h.closes
       };
     }),
-    "sameAs": [C.social.facebook, C.social.instagram]
+    "sameAs": [C.social.facebook, C.social.instagram],
+    "hasCredential": [{ "@type": "EducationalOccupationalCredential", "name": "Webster Technique Certification", "recognizedBy": { "@type": "Organization", "name": "International Chiropractic Pediatric Association" } }]
   };
   var tag = document.createElement("script");
   tag.type = "application/ld+json";

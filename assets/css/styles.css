@@ -114,6 +114,7 @@ a:hover { color: var(--moss); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }
 .hero .btn-ghost { color: var(--linen) !important; border-color: var(--linen); }
 .hero .btn-ghost:hover { background: rgba(255,255,255,.12); }
+.trust-line { margin-top: 1.25rem; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; color: var(--honey); font-weight: 600; }
 
 /* ---------- Sections ---------- */
 .section { padding: 3.5rem 0; }

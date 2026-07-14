@@ -83,6 +83,14 @@ find a time (usually within one business day).
   history** — so PHI stays inside Jane and off our Supabase/Resend pipeline.
   The intake link lives on `/new-patients/` only.
 
+## Credentials
+
+Dr. Josh Nannen is Webster Certified through the ICPA. The certification is
+surfaced site-wide: the footer "Credentials & Memberships" column, the homepage
+hero trust-line and Pregnancy & Pediatric card, the About bio, the Service Areas
+intro, a "Webster Certified care" section and FAQ on the Pregnancy & Pediatric
+page, and the JSON-LD schema (`hasCredential`).
+
 ## Launch checklist
 
 - [ ] Remove noindex meta from every page (grep `REMOVE AT LAUNCH`)
@@ -91,6 +99,7 @@ find a time (usually within one business day).
 - [ ] Point DNS, add CNAME file for the custom domain
 - [ ] Create Supabase leads table + notify Edge Function, paste keys into site-config.js
 - [ ] Confirm the request form captures contact info only (no health history) and that Jane stays intake-only on `/new-patients/`
+- [ ] Confirm Dr. Josh's Webster certification is current and that his listing appears in the ICPA directory at icpa4kids.com (expecting moms verify there)
 - [ ] Replace all photo placeholders, paste approved Google reviews
 
 ## Open items in the code (68)
