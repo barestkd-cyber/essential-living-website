@@ -163,3 +163,7 @@ find a time (usually within one business day).
 - `new-patients/index.html:57` — <noscript><p>Essential Living Chiropractic<br>6649 Oak Hill Blvd, Tyler, TX 75703<br>(903) 630-5327 · office@e
 - `new-patients/index.html:74` — <noscript><p>Essential Living Chiropractic<br>6649 Oak Hill Blvd, Tyler, TX 75703<br>(903) 630-5327 · office@e
 - `new-patients/index.html:93` — <!-- CONFIRM: correct chamber link and current membership -->
+- `services/pregnancy-pediatric/index.html:51` — <!-- CONFIRM with Josh: does he use pregnancy pillows or a drop-away table section for expecting moms? Add a sentence if so. -->
+- `services/brain-balancing/index.html:49` — <!-- CONFIRM this entire section with Josh before launch. Conservative placeholder copy. -->
+- `services/vibration-therapy/index.html:49` — <!-- CONFIRM specifics with Josh before launch. -->
+- `services/supplements/index.html:52` — <!-- CONFIRM with Josh: current lines carried and whether patients can reorder without a visit. -->
