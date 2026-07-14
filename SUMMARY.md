@@ -176,3 +176,6 @@ page, and the JSON-LD schema (`hasCredential`).
 - `services/brain-balancing/index.html:49` — <!-- CONFIRM this entire section with Josh before launch. Conservative placeholder copy. -->
 - `services/vibration-therapy/index.html:49` — <!-- CONFIRM specifics with Josh before launch. -->
 - `services/supplements/index.html:52` — <!-- CONFIRM with Josh: current lines carried and whether patients can reorder without a visit. -->
+- `about/index.html` — Dr. Danielle Lewis: confirm Webster certification. When confirmed, uncomment the `<p>Dr. Danielle is also Webster Certified through the ICPA.</p>` line in about/index.html and remove the adjacent CONFIRM comment.
+- `about/index.html`, `index.html` — Dr. Danielle Lewis: real bio, degree/school, and background (homepage card + About section currently carry placeholder copy).
+- `index.html`, `about/index.html` — TODO-PHOTO: Dr. Danielle Lewis portrait (homepage "Meet the doctors" card and the About split).

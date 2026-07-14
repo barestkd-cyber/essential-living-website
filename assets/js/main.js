@@ -64,7 +64,10 @@
       };
     }),
     "sameAs": [C.social.facebook, C.social.instagram],
-    "hasCredential": [{ "@type": "EducationalOccupationalCredential", "name": "Webster Technique Certification", "recognizedBy": { "@type": "Organization", "name": "International Chiropractic Pediatric Association" } }]
+    "employee": [
+      { "@type": "Person", "name": "Dr. Josh Nannen", "jobTitle": "Chiropractor", "hasCredential": [{ "@type": "EducationalOccupationalCredential", "name": "Webster Technique Certification", "recognizedBy": { "@type": "Organization", "name": "International Chiropractic Pediatric Association" } }] },
+      { "@type": "Person", "name": "Dr. Danielle Lewis", "jobTitle": "Chiropractor", "memberOf": { "@type": "Organization", "name": "International Chiropractic Pediatric Association" } }
+    ]
   };
   var tag = document.createElement("script");
   tag.type = "application/ld+json";
@@ -111,6 +114,7 @@
         phone: form.phone.value.trim(),
         email: form.email.value.trim(),
         best_time: form.best_time ? form.best_time.value.trim() : "",
+        doctor_pref: form.doctor_pref ? form.doctor_pref.value : "",
         interest: form.interest ? form.interest.value : "",
         message: form.message.value.trim(),
         source: "website-contact"
