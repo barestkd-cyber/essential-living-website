@@ -109,7 +109,8 @@
         name: form.name.value.trim(),
         phone: form.phone.value.trim(),
         email: form.email.value.trim(),
-        interest: form.interest.value,
+        best_time: form.best_time ? form.best_time.value.trim() : "",
+        interest: form.interest ? form.interest.value : "",
         message: form.message.value.trim(),
         source: "website-contact"
       };

@@ -13,8 +13,8 @@
   --white:  #ffffff;
   --honey:  #3cbd7d;   /* spring-green accent: primary CTA, tagline, stars, focus */
 
-  --serif: ui-serif, Georgia, "Times New Roman", serif;
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --serif: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --sans: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --wrap: 1060px;
   --radius: 10px;
@@ -34,7 +34,7 @@ body {
 
 img, svg { max-width: 100%; display: block; }
 
-h1, h2, h3 { font-family: var(--serif); line-height: 1.2; color: var(--forest); margin: 0 0 .5rem; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 800; letter-spacing: -0.015em; line-height: 1.2; color: var(--forest); margin: 0 0 .5rem; }
 h1 { font-size: clamp(2rem, 5vw, 3rem); }
 h2 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); }
 h3 { font-size: 1.2rem; }
@@ -226,9 +226,19 @@ form button { margin-top: 1.25rem; cursor: pointer; }
   .site-nav {
     display: none; position: absolute; top: 100%; left: 0; right: 0;
     background: var(--white); border-bottom: 1px solid var(--sand);
-    flex-direction: column; align-items: flex-start; padding: 1rem 1.25rem; gap: .9rem;
+    flex-flow: row wrap; align-items: center; padding: 1rem 1.25rem; gap: .9rem;
   }
   .site-nav.open { display: flex; }
+  /* Plain nav links (including Contact) stay a vertical list */
+  .site-nav > a:not(.nav-phone):not(.btn) { flex: 1 0 100%; }
+  /* Phone number and Request button share one action row at the bottom.
+     nav-phone keeps its natural width (basis auto, shrinkable); the button
+     takes basis 0 so the two never wrap apart, then grows to fill the row. */
+  .site-nav .nav-phone, .site-nav .btn { display: inline-flex; align-items: center; margin-top: .6rem; }
+  .site-nav .nav-phone {
+    flex: 0 1 auto; padding-top: 1rem; border-top: 1px solid var(--sand);
+  }
+  .site-nav .btn { flex: 1 1 0; min-width: 0; justify-content: center; }
   .hero-branch { width: 280px; opacity: .12; }
 }
 
