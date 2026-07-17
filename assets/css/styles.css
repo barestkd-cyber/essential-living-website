@@ -103,10 +103,14 @@ a:hover { color: var(--moss); }
   background: var(--forest); color: var(--linen);
   position: relative; overflow: hidden;
 }
-.hero-inner { position: relative; z-index: 1; padding: 4.5rem 1.25rem 4rem; max-width: var(--wrap); margin: 0 auto; }
+.hero-inner {
+  position: relative; z-index: 1; padding: 4rem 1.25rem; max-width: var(--wrap); margin: 0 auto;
+  display: grid; grid-template-columns: 1.05fr .95fr; gap: 2.75rem; align-items: center;
+}
 .hero .eyebrow { color: var(--honey); }
 .hero h1 { color: var(--linen); max-width: 15em; }
 .hero p { max-width: 34em; font-size: 1.1rem; color: #d9e8e5; }
+.hero-media img { width: 100%; height: auto; display: block; border-radius: 16px; box-shadow: 0 16px 44px rgba(0,0,0,.32); }
 .hero-branch {
   position: absolute; right: -60px; bottom: -40px; width: 420px; opacity: .16;
   pointer-events: none;
@@ -230,6 +234,8 @@ form button { margin-top: 1.25rem; cursor: pointer; }
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .split { grid-template-columns: 1fr; }
+  .hero-inner { grid-template-columns: 1fr; gap: 2rem; padding: 3rem 1.25rem; }
+  .hero-media { max-width: 420px; margin: 0 auto; }
 }
 @media (max-width: 768px) {
   .nav-toggle { display: block; }
